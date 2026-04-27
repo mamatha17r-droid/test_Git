@@ -15,7 +15,7 @@ jobs:
 
       - name: Sync Code to Databricks
         run: |
-          databricks repos update /Workspace/Users/mrasamall@phs.org/test_Git --branch main
+          databricks repos update /Workspace/Repos/GITHUB --branch main
         env:
           DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
           DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
