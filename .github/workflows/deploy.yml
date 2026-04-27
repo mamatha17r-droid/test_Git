@@ -2,7 +2,7 @@ name: "Deploy to Databricks"
 on:
   push:
     branches:
-      - main  # This triggers the script every time you push to the main branch
+      - main
 
 jobs:
   deploy:
@@ -13,7 +13,7 @@ jobs:
       - name: Setup Databricks CLI
         uses: databricks/setup-cli@main
 
-            - name: Sync Code to Databricks
+      - name: Sync Code to Databricks
         run: |
           databricks repos update /Workspace/Repos/mrasamall@phs.org/test_Git --branch main
         env:
