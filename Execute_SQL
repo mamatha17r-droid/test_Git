@@ -1,0 +1,3 @@
+
+Insert into my_test_catalog.default.sales_franchises_Copy  
+SELECT 999999 as franchiseID, 'Test' as name, 'Test' as city, 'Test' as district, 'Test' as zipcode, 'Test' as country, 'Test' as size, 100.0 as longitude, 999 as supplierID;
